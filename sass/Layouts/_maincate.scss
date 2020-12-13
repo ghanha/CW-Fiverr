@@ -1,0 +1,38 @@
+.maincate {
+    margin: 100px 0px 100px;
+    h2 {
+        @include styleText(32px, $color-black-0, $fw-bold);
+        line-height: 120%;
+        margin-bottom: 24px;
+        padding-bottom: 40px;
+    }
+    li {
+        list-style-type: none;
+        text-align: center;
+        padding: 0px 10px 55px;
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            color: $color-black-0;
+            // @include styleText($fs0 + 1, $color-black-0, $fw-normal);
+            img {
+                width: 48px;
+                height: 48px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                &::after {
+                    background-color: $color-gray-4;
+                    content: "";
+                    display: inline-block;
+                    height: 1px;
+                    position: relative;
+                    vertical-align: middle;
+                    width: 25%;
+                }
+            }
+        }
+    }
+}

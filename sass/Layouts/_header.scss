@@ -1,0 +1,30 @@
+header {
+    padding: $pd-1;
+    @include styleText($fs-0, $color-white-0, $fw-bold);
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    .navbar-brand {
+        img {
+            width: 89px;
+            height: 27px;
+        }
+    }
+}
+
+@include responsive("large") {
+    .header__responsive__large {
+        display: none;
+    }
+}
+
+@include responsive("medium") {
+    .carousel {
+        .carousel__content {
+            width: 50%;
+        }
+    }
+}

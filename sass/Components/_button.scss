@@ -1,0 +1,21 @@
+.btn-header{
+    @include styleButton($color-trans, $color-white-0, 1px, 1px);
+    p{
+        @include styleText($fs-1, $color-white-0, $fw-bold);
+        // display: table-cell;
+        // vertical-align: middle;
+        margin-left: $mg-2;
+        margin-right: $mg-2;
+        margin-bottom: $mg-1;
+        margin-bottom: $mg-1;
+    }
+    &:hover{
+        @include styleHoverButton($color-fiverr-green, $color-fiverr-green, $color-white-0);
+    }
+}
+
+.btn-carousel{
+    @include styleButton($color-fiverr-green, $color-fiverr-green, 1px, 24px);
+    @include styleText($fs-1, $color-white-0, $fw-bold);
+    border-radius: 0 4px 4px 0;
+}
