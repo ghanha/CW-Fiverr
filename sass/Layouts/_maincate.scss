@@ -23,13 +23,15 @@
                 text-align: center;
                 margin-left: auto;
                 margin-right: auto;
-                &::after {
-                    background-color: $color-gray-4;
+            }
+            p{
+                &::before {
+                    background-color: $color-gray-2;
                     content: "";
-                    display: inline-block;
-                    height: 1px;
+                    display: block;
+                    height: 2px;
                     position: relative;
-                    vertical-align: middle;
+                    left: 37%;
                     width: 25%;
                 }
             }

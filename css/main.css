@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .owl-prev, .owl-next {
@@ -342,13 +342,13 @@ header .navbar-brand img {
   margin-right: auto;
 }
 
-.maincate li a img::after {
-  background-color: #686f7a;
+.maincate li a p::before {
+  background-color: #a1a7b3;
   content: "";
-  display: inline-block;
-  height: 1px;
+  display: block;
+  height: 2px;
   position: relative;
-  vertical-align: middle;
+  left: 37%;
   width: 25%;
 }
 /*# sourceMappingURL=main.css.map */
